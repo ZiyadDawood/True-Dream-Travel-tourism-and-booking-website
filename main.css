@@ -59,7 +59,7 @@ body {
 	width: 100%;
 	height: 410vh;
 	align-items: center;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(/imgs/background-image\(4\).jpeg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(background-image\(4\).jpeg);
 	background-position: top;
 	background-size: cover;
 }
