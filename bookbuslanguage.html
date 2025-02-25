@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>True Dream | Book Now</title>
+    <link
+      rel="icon"
+      href="./imgs/true dream logo.jpg"
+      type="image"
+      style="border-radius: 60%"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+          * {
+           padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: 'Poppins', sans-serif;
+
+}
+
+.body {
+	margin: 0;
+          width: 100%;
+	height: 110vh;
+	align-items: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(./imgs/background-image\(4\).jpeg);
+	background-position: bottom;
+	background-size: cover;
+}
+
+.navbar {
+          margin-top:  0;
+	width: 100%;
+	height: 90px;
+	background-color: rgba(14, 14, 16,0.8);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+	z-index: 1000;
+}
+.navbar h1 {
+          font-weight: 500;
+}
+
+.menu ul {
+	display: flex;
+	align-items: center;
+}
+
+.menu ul li a {
+	text-decoration: none;
+	color: white;
+	padding: 5px 12px;
+	letter-spacing: 2px;
+	font-size: 18px;
+}
+
+.menu ul li a:hover {
+	border-bottom: 3px solid white;
+	transition: 0.4s;
+}
+
+.signup a {
+	text-decoration: none;
+	color:white;
+	font-size: 18px;
+	border-radius: 12px;
+	padding: 12px 30px;
+	border: 2px solid #ff0000;
+}
+
+.signup a:hover {
+	background-color: red;
+	transition: 0.6s;
+}
+      .form-container {
+          max-width: 510px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: rgb(0, 0, 0);
+      border-radius: 12px;
+      color: white;
+      }
+
+      .form-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #fff;
+      }
+
+      .form-container label {
+        margin-bottom: 10px;
+        display: block;
+        font-size: 18px;
+      }
+      input:hover {
+      background-color: rgba(164, 119, 87, 0.9);
+    }
+      #destination {
+          width: 95%;
+      }
+
+      .form-container input[type="date"],
+      .form-container input[type="email"],
+      .form-container input[type="number"] {
+        width: 95%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 4px;
+      }
+
+       input[type="submit"] {
+        width: 95%;
+        padding: 14px;
+        font-weight: bold;
+        background-color: #fff;
+        border-radius: 12px;
+        font-size: 18px;
+        color: red;
+        cursor: pointer;
+      }
+
+       input[type="submit"]:hover {
+        background-color: #000;
+        letter-spacing: 3px;
+        transition: 0.6s;
+      }
+    </style>
+  <body class="body">
+          <div class="navbar">
+                    <div class="logo">
+                      <h1>
+                        <img
+                          src="./imgs/true dream logo.jpg"
+                          style="
+                            width: 60px;
+                            height: 60px;
+                            margin-top: 5px;
+                            border-radius: 48%;
+                          "
+                          alt="true dream logo"
+                        />
+                        ترو دريم للسياحة
+                      </h1>
+                    </div>
+                    <div class="menu">
+                      <ul>
+                        <li><a href="language.html">الرئيسية</a></li>
+                        <li><a href="language.html">الباصات</a></li>
+                        <li><a href="language.html">الأماكن</a></li>
+                        <li><a href="language.html">تواصل معنا</a></li>
+                      </ul>
+                    </div>
+                    <div class="signup">
+                      <a href="./signuplanguage.html">سجل الأن</a>
+                      <a href="./bookbus.html"
+                        ><i
+                          class="fa-sharp-duotone fa-solid fa-globe"
+                          style="font-size: 15px"
+                        >
+                          EN | AR</i
+                        ></a
+                      >
+                    </div>
+                  </div>
+    <div class="form-container">
+          <h2>احجز الباص</h2>
+          <form action="./bookedlanguage.html" method="get">
+            <label for="destination">اختر نوع الباص:-</label>
+            <select id="destination">
+              <option value="مرسيدس">مرسيدس</option>
+              <option value="فولفو">فولفو</option>
+              <option value="هيونداي">هيونداي</option>
+            </select>
+
+        <label for="date">التاريخ:-</label>
+        <input type="date" id="date" name="date" />
+
+        <label for="days">عدد الأيام:-</label>
+        <input type="number" id="days" name="days" min="1" max="100" />
+
+        <label for="email">بريد إلكتروني</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="بريد إلكتروني.."
+        />
+
+        <input type="submit" value="سجل الأن" />
+      </form>
+    </div>
+  </body>
+</html>

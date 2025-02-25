@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>True Dream | Signed up</title>
+    <link
+      rel="icon"
+      href="./imgs/true dream logo.jpg"
+      type="image"
+      style="border-radius: 60%"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="travel.css" />
+    <style>
+      .welcome-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+          url("./imgs/background-image\(4\).jpeg");
+        background-size: cover;
+        background-position: bottom;
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+        animation: slideIn 2s ease-in-out;
+      }
+
+      p {
+        font-size: 24px;
+        animation: slideIn 2s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateY(50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      @media (max-width: 1024px) and (min-width: 768px) {
+	.navbar {
+	    flex-direction: column;
+	    height: auto;
+	    padding: 10px 0;
+	}
+      
+	.menu ul {
+	    flex-direction: column;
+	}
+      
+	.menu ul li {
+	    margin-bottom: 10px;
+	}
+      
+	.signup {
+	    margin-top: 15px;
+	}
+}
+      @media screen and (max-width: 768px) {
+	.navbar {
+	    flex-direction: column;
+	    height: auto;
+	    padding: 10px 0;
+	}
+      
+	.menu ul {
+	    flex-direction: column;
+	    text-align: center;
+	}
+      
+	.menu ul li {
+	    margin-bottom: 15px;
+	}
+      
+	.signup a {
+	    display: block;
+	    width: 100%;
+	    text-align: center;
+	    margin-top: 10px;
+	}
+}
+    </style>
+  </head>
+  <body>
+          <div class="navbar">
+                    <div class="logo">
+                      <h1>
+                        <img
+                          src="./imgs/true dream logo.jpg"
+                          style="
+                            width: 60px;
+                            height: 60px;
+                            margin-top: 5px;
+                            border-radius: 48%;
+                          "
+                          alt="true dream logo"
+                        />
+                        ترو دريم للسياحة
+                      </h1>
+                    </div>
+                    <div class="menu">
+                      <ul>
+                        <li><a href="language.html">الرئيسية</a></li>
+                        <li><a href="language.html">الباصات</a></li>
+                        <li><a href="language.html">الأماكن</a></li>
+                        <li><a href="language.html">تواصل معنا</a></li>
+                      </ul>
+                    </div>
+                    <div class="signup">
+                      <a href="./signuplanguage.html">سجل الأن</a>
+                      <a href="./booked.html"
+                        ><i
+                          class="fa-sharp-duotone fa-solid fa-globe"
+                          style="font-size: 15px"
+                        >
+                          EN | AR</i
+                        ></a
+                      >
+                    </div>
+                  </div>
+    <div class="welcome-container">
+      <div>
+        <h1>مرحباً بك الى ترو دريم للسياحة</h1>
+        <p>شكرا لك على الاشتراك</p>
+      </div>
+    </div>
+  </body>
+</html>
